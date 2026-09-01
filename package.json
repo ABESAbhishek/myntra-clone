@@ -2,6 +2,10 @@
   "name": "myntra-clone",
   "version": "1.0.0",
   "description": "Full-stack Myntra Clone with React, Tailwind CSS, Node.js, Express & SQLite",
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "npm run dev --prefix server",
